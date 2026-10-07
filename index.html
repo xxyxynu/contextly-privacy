@@ -16,9 +16,9 @@
     <p class="eyebrow">Privacy & user data · 隐私与用户数据</p>
     <h1>Privacy Policy / 隐私政策</h1>
     <p class="lede">How Wordo handles saved vocabulary, page content and optional translation requests. / Wordo 如何处理你的词库、网页文字与可选在线翻译。</p>
-    <p><small>Effective / 生效日期：25 September 2026 · Applies to / 适用于：Wordo browser extension v0.5.8.1</small></p>
+    <p><small>Effective / 生效日期：25 September 2026 · Applies to / 适用于：Wordo browser extension v0.5.8.2</small></p>
     <nav aria-label="Languages"><a href="#english">English</a><a href="#chinese" lang="zh-CN">简体中文</a></nav>
-    <div class="callout"><p><strong>Key point / 核心说明：</strong> Your saved vocabulary normally stays in your browser. For English dictionary lookup, Wordo may send only the selected word to Free Dictionary API. Online translation is optional; when enabled and used, the selected text and possibly a short source sentence are sent to MyMemory. / 收藏的词库通常保存在你的浏览器中。查询英文词典时，Wordo 可能仅将所选单词发送给 Free Dictionary API；只有你主动启用在线翻译时，选中文字及可能的一小段原文才会发送给 MyMemory。</p></div>
+    <div class="callout"><p><strong>Key point / 核心说明：</strong> Your saved vocabulary normally stays in your browser. For English dictionary lookup, Wordo may send only the selected word to FreeDictionary.dev, Wiktionary, or Free Dictionary API. Online translation is optional; when enabled and used, the selected text and possibly a short source sentence are sent to MyMemory. / 收藏的词库通常保存在你的浏览器中。查询英文词典时，Wordo 可能仅将所选单词发送给 FreeDictionary.dev、Wiktionary 或 Free Dictionary API；只有你主动启用在线翻译时，选中文字及可能的一小段原文才会发送给 MyMemory。</p></div>
   </header>
   <section id="english" lang="en">
     <p class="lang">English</p>
@@ -29,16 +29,16 @@
     <p>When you choose to save vocabulary, Wordo stores the selected word or phrase, its language, any definition or sentence translation, a short original passage, the page title and source URL, the save date and location hints needed for the “jump to context” feature. The source URL may contain query parameters; avoid saving words from private or sensitive pages.</p>
     <p>It also stores your interface and learning-language choices, the websites you enable, saved-word status, review goals and review progress. When you turn on saved-word recognition, Wordo checks readable text on enabled pages against your local vocabulary to highlight matches. The extension can inspect open-tab URLs to find and reuse an already open source article when you select “jump to context.” It does not intentionally build a complete browsing-history log.</p>
     <h2>3. Where information is stored</h2>
-    <p>Vocabulary, saved passages, source URLs, language settings, website preferences and review data are stored on your device in Chrome extension storage. Wordo v0.5.8.1 does not require an account, operate a cloud-synchronization service or upload your full vocabulary library to a Wordo-operated server.</p>
+    <p>Vocabulary, saved passages, source URLs, language settings, website preferences and review data are stored on your device in Chrome extension storage. Wordo v0.5.8.2 does not require an account, operate a cloud-synchronization service or upload your full vocabulary library to a Wordo-operated server.</p>
     <p>If you choose to export CSV or JSON, the resulting file may contain saved sentences, source URLs and review information. Store or delete your exported files as you see fit. Local Chrome extension storage is not a secure vault; do not save passwords, confidential messages, medical records or banking information.</p>
     <h2>4. Website access</h2>
     <p>Wordo requests permission for a website when you choose to enable it. On an authorized website, its content scripts can read and process page text to support word selection, source-sentence extraction, saved-word recognition and return-to-source positioning. This processing occurs in your browser unless you separately use optional online translation as described below.</p>
     <p>You can disable a website inside Wordo or revoke its permission through Chrome extension settings. Revoking access prevents further use on that site; reload an already open page if its existing highlights do not disappear immediately.</p>
     <h2>5. Dictionary lookup, optional translation and third parties</h2>
-    <p>For supported English single-word lookups, Wordo may request dictionary definitions and phonetic text from <a href="https://dictionaryapi.dev/" rel="noopener noreferrer">Free Dictionary API</a>. Only the selected English word is sent for this lookup; Wordo does not send the source page URL, full sentence, full article, vocabulary library or review history to that service.</p>
+    <p>For supported English single-word lookups, Wordo may request dictionary definitions and phonetic text from <a href="https://api.freedictionary.dev/" rel="noopener noreferrer">FreeDictionary.dev</a>, <a href="https://en.wiktionary.org/" rel="noopener noreferrer">Wiktionary</a>, or <a href="https://dictionaryapi.dev/" rel="noopener noreferrer">Free Dictionary API</a>. Only the selected English word is sent for these lookups; Wordo does not send the source page URL, full sentence, full article, vocabulary library or review history to that service.</p>
     <p>Where supported, Wordo first tries Chrome’s on-device Translator API. Chrome may download language models to provide this feature. Wordo does not operate Chrome’s model service.</p>
     <p><strong>Online translation is off by default.</strong> If you turn it on and the on-device option is unavailable or fails, Wordo can request translation from <a href="https://mymemory.translated.net/" rel="noopener noreferrer">MyMemory (Translated)</a> over HTTPS. The extension sends the selected word or phrase and language codes; it may also send a separate request containing up to 500 characters of the saved source sentence. The text is included in an HTTPS GET request URL. The extension does not intentionally send the source page URL, whole article, complete vocabulary library or review history to MyMemory. The third-party service and network providers may process submitted text and technical request data, such as IP address, under their own terms and privacy practices. Wordo does not control their retention practices.</p>
-    <p>Do not enable online translation for sensitive or confidential material. You can disable online translation in Settings at any time and enter definitions manually. Wordo v0.5.8.1 has no embedded advertising or analytics service and does not sell vocabulary data.</p>
+    <p>Do not enable online translation for sensitive or confidential material. You can disable online translation in Settings at any time and enter definitions manually. Wordo v0.5.8.2 has no embedded advertising or analytics service and does not sell vocabulary data.</p>
     <h2>6. Your choices, deletion and retention</h2>
     <p>You can edit or delete saved words in Wordo, change language settings, disable saved-word recognition, revoke website access, turn off online translation, and export your vocabulary to CSV or a JSON backup. You can import a compatible JSON backup into another installation of the extension.</p>
     <p>Local data remains on your device until you delete it, clear the extension’s data or uninstall the extension. Uninstalling the extension or clearing its storage can permanently remove locally stored vocabulary and review data. Previously exported files remain wherever you saved them; Wordo cannot remotely delete those files. Wordo does not hold a separate account-based copy to restore your data.</p>
@@ -56,16 +56,16 @@
     <p>当你主动收藏词汇时，Wordo 会保存所选单词或短语、学习语言、释义或例句翻译、简短原文片段、网页标题、来源网址、收藏时间，以及用于「返回原文并定位」的辅助信息。来源网址可能包含查询参数，请勿在涉及隐私或敏感信息的网页中收藏内容。</p>
     <p>插件还会保存界面与语言偏好、你启用的网站、词条学习状态、每日复习目标和复习进度。当你开启「旧词识别」时，插件会将已授权网页中的可读文字与本地词库进行匹配，并标记已收藏词汇。当你点击「返回原文并定位」时，插件可以检查已打开标签页的网址，以便切换到原来打开的文章。插件不会有意建立完整的浏览历史记录。</p>
     <h2>3. 信息保存在哪里</h2>
-    <p>词库、原文例句、来源网址、语言设置、网站偏好及学习记录保存在你设备上的 Chrome 扩展本地存储中。Wordo v0.5.8.1 不要求注册账号，不提供云端同步，也不会将完整词库上传到 Wordo 运营的服务器。</p>
+    <p>词库、原文例句、来源网址、语言设置、网站偏好及学习记录保存在你设备上的 Chrome 扩展本地存储中。Wordo v0.5.8.2 不要求注册账号，不提供云端同步，也不会将完整词库上传到 Wordo 运营的服务器。</p>
     <p>你主动导出 CSV 或 JSON 时，文件中可能包含原文句子、来源网址及复习信息。请自行妥善保管或删除导出文件。Chrome 本地扩展存储不是加密保险箱，请勿在插件中保存密码、私人通信、病历、银行卡信息或其他机密内容。</p>
     <h2>4. 网站访问权限</h2>
     <p>你主动选择启用某个网站时，Wordo 才会请求相应权限。在已授权网站上，插件脚本能够读取和处理页面文字，以实现选词、提取原文例句、识别已收藏词汇和返回原文定位。除下文说明的可选在线翻译外，这些处理发生在你的浏览器中。</p>
     <p>你可以在 Wordo 中停用某个网站，也可以在 Chrome 扩展设置中撤销其权限。如果已打开的页面中仍保留旧标记，可刷新页面使停用生效。</p>
     <h2>5. 词典查询、可选在线翻译与第三方服务</h2>
-    <p>对于受支持的英文单词查询，Wordo 可能通过 <a href="https://dictionaryapi.dev/" rel="noopener noreferrer">Free Dictionary API</a> 获取词典释义和音标。该查询仅发送所选英文单词，不发送来源网页地址、完整例句、整篇文章、完整词库或复习记录。</p>
+    <p>对于受支持的英文单词查询，Wordo 可能通过 <a href="https://api.freedictionary.dev/" rel="noopener noreferrer">FreeDictionary.dev</a>、<a href="https://en.wiktionary.org/" rel="noopener noreferrer">Wiktionary</a> 或 <a href="https://dictionaryapi.dev/" rel="noopener noreferrer">Free Dictionary API</a> 获取词典释义和音标。这些查询仅发送所选英文单词，不发送来源网页地址、完整例句、整篇文章、完整词库或复习记录。</p>
     <p>如果浏览器支持，Wordo 会优先尝试 Chrome 设备端 Translator API。Chrome 可能需要下载对应的语言模型；Wordo 不运营该模型服务。</p>
     <p><strong>在线翻译默认关闭。</strong> 只有你主动开启，并且设备端翻译不可用或失败时，Wordo 才可能通过 HTTPS 向 <a href="https://mymemory.translated.net/" rel="noopener noreferrer">MyMemory（Translated）</a> 请求翻译。插件会发送所选单词或短语及语言代码；还可能单独发送最多 500 个字符的原文句子以取得例句译文。这些文字会包含在 HTTPS GET 请求的网址参数中。插件不会有意向 MyMemory 发送来源文章的网址、整篇文章、完整词库或复习历史。第三方服务及相关网络服务提供方可能根据各自条款和隐私做法处理所提交文字和 IP 地址等技术信息；Wordo 无法控制其数据保留方式。</p>
-    <p>请勿将机密或敏感内容用于在线翻译。你可以随时在设置中关闭在线翻译，或自行填写释义。Wordo v0.5.8.1 不含内置广告或数据分析服务，也不出售词库数据。</p>
+    <p>请勿将机密或敏感内容用于在线翻译。你可以随时在设置中关闭在线翻译，或自行填写释义。Wordo v0.5.8.2 不含内置广告或数据分析服务，也不出售词库数据。</p>
     <h2>6. 用户选择、删除及保存期限</h2>
     <p>你可以在 Wordo 中编辑或删除词条、调整语言设置、关闭旧词识别、撤销网站授权、关闭在线翻译，以及导出 CSV 或 JSON 备份。兼容的 JSON 备份可以导入另一次插件安装。</p>
     <p>本地数据会保留在设备上，直到你主动删除、清除扩展数据或卸载扩展。卸载或清除数据可能永久删除本地词库和复习进度。之前导出的备份文件仍保留在你保存它们的位置，Wordo 无法远程删除这些文件。Wordo 不保存额外的账号云端副本，因此不能通过账号恢复你的本地数据。</p>
@@ -74,5 +74,5 @@
     <h2>8. 有限用途声明</h2>
     <p>通过 Chrome API 访问的信息，仅用于提供和改进 Wordo 面向用户的词汇收藏、语境阅读与复习功能。Wordo 对通过 Google API 获得的信息的使用遵守 Chrome Web Store 用户数据政策，包括 Limited Use（有限用途）要求。</p>
   </section>
-  <footer>Wordo · Privacy Policy · Version 0.5.8.1</footer>
+  <footer>Wordo · Privacy Policy · Version 0.5.8.2</footer>
 </main></body></html>
